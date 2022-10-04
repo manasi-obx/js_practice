@@ -1,144 +1,88 @@
-//1
-/*function dispinp(inp) {
+
+function dispinp(inp) {
     console.log(inp);
 }
 
-let myinp = "1";
-dispinp(myinp);
-*/
 
-//2
-/*
-function ifnum (inp) {
-    if (inp === typeof(1)) {
-        console.log("it's a number");
+function isnum (inp) {
+    if (typeof(inp) === typeof(1)) {
+        return 1;
     }
     else {
-        console.log("Not a number");
+        return 0;
     }
 }
 
-var myinp = "srsy";
-var typeofvar = typeof(myinp);
-ifnum(typeofvar);
-*/
 
-//3
-/*
 function ifstr(inp) {
-    if (inp === typeof("ABC")) {
-        console.log("it's a sting");
+    if (typeof(inp) === typeof("ABC")) {
+      return 1;
     }
     else {
-        console.log("Not a string");
+        return 0;
     }
 }
 
-var myinp = 2;
-var typeofvar = typeof(myinp);
-ifstr(typeofvar);
-*/
 
-//4
-/*
 function iseven(num){
     if(num % 2 === 0){
-        return("its even number.");
+        return 1
     }
     else {
-        return("its odd number.");
+        return 0
     }
 }
 
-var num = 11;
-var val = iseven(num);
-console.log(val);
-*/
 
-//5 
-/*
 function isodd(num){
     if(num % 2 === 1){
-        return("its odd number.");
+        return 1
     }
     else {
-        return("its not odd number.");
+        return 0
     }
 }
 
-var num = 2;
-var val = isodd(num);
-console.log(val);
-*/
-
-//6
-/*
 function checklength(inp) {
     var len = inp.length;
     return len;
 }
 
-var enterinp = "Its a string";
-console.log(checklength(enterinp));
-*/
 
-//7
-/*
 function upper(inp) {
     var line = inp.toUpperCase();
     return line;
 }
 
-var enterinp = "Its a string";
-console.log(upper(enterinp));
-*/
 
-//8
-/*
 function lower(inp) {
     var line = inp.toLowerCase();
     return line;
 }
 
-var enterinp = "ItS A STRING";
-console.log(lower(enterinp));
-*/
 
-//9
-/*
 function squareOfNum(num) {
     let sq = Math.pow(num,2);
     return sq;
 }
 
-var num = 15;
-console.log(squareOfNum(num));
-*/
 
-//10
-/*
 function squareRootOfNum(num) {
     let sq = Math.sqrt(num,2);
     return sq;
 }
 
-var num = 64;
-console.log(squareRootOfNum(num));
-*/
+
+
 
 //11
-/*
+
 function arrlen(arr) {
     let len = arr.length;
     return len;
 }
 
-let arr = [1, 2, 3, 4, 5];
-console.log(arrlen(arr));
-*/
 
-//12
-/*
 function maxnum(arr) {
     let maxval = arr[0];
     for( var i=0;i<arr.length;i++)
@@ -151,12 +95,8 @@ function maxnum(arr) {
     return maxval;
 }
 
-let arr = [35, 102, 98, 47, 65, 12];
-console.log(maxnum(arr));
-*/
 
-//13
-/*
+
 function minnum(arr) {
     let minval = arr[0];
     for( var i=0;i<arr.length;i++)
@@ -169,12 +109,7 @@ function minnum(arr) {
     return minval;
 }
 
-let arr = [35, 102, 98, 47, 65, 12];
-console.log(minnum(arr));
-*/
 
-//14
-/*
 function sumarr(arr) {
     sum = 0;
     for (var i = 0; i < arr.length; i++)
@@ -184,12 +119,7 @@ function sumarr(arr) {
     return sum;
 }
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-console.log(sumarr(arr));
-*/
 
-//15
-/*
 function avgOfarr(arr) {
     sum = 0;
     for (var i = 0; i < arr.length; i++)
@@ -200,12 +130,8 @@ function avgOfarr(arr) {
     return avg;
 }
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-console.log(avgOfarr(arr));
-*/
 
-//16
-/*
+
 function freqOfChar(inputstr) {
     for(var i = 0; i<inputstr.length; i++)
     {
@@ -222,10 +148,46 @@ function freqOfChar(inputstr) {
         console.log(newstr,count);
     }
 }
+
+
+
+
+
+let myinp1 = "1";
+var myinp2 = 12;
+var myinp3 = " ";
+var myinp4 = 11;
+var myinp5 = 3;
+var myinp6 = "Its a string";
+var myinp7 = "Its a string";
+var myinp8 = "ItS A STRING";
+var myinp9 = 15;
+var myinp10 = 64;
+let arr1 = [1, 2, 3, 4, 5];
+let arr2 = [35, 102, 98, 47, 65, 12];
+let arr3 = [35, 102, 98, 47, 65, 12];
+let arr4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let arr5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 inputstr = "Apple";
+
+
+
+
+
+dispinp(myinp1);
+console.log(isnum(myinp2));
+console.log(ifstr(myinp3));
+console.log(iseven(myinp4));
+console.log(isodd(myinp5));
+console.log(checklength(myinp6));
+console.log(upper(myinp7));
+console.log(lower(myinp8));
+console.log(squareOfNum(myinp9));
+console.log(squareRootOfNum(myinp10));
+console.log(arrlen(arr1));
+console.log(maxnum(arr2));
+console.log(minnum(arr3));
+console.log(sumarr(arr4));
+console.log(avgOfarr(arr5));
 freqOfChar(inputstr);
-*/
-
-
-
 
