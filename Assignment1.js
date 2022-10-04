@@ -121,11 +121,7 @@ function sumarr(arr) {
 
 
 function avgOfarr(arr) {
-    sum = 0;
-    for (var i = 0; i < arr.length; i++)
-    {
-        sum = sum + arr[i];
-    }
+    (sumarr(arr));
     let avg = sum / arr.length;
     return avg;
 }
@@ -150,44 +146,28 @@ function freqOfChar(inputstr) {
 }
 
 
+let arr = [35, 102, 98, 47, 65, 12];
+inputstr = "Its a string";
 
 
-
-let myinp1 = "1";
-var myinp2 = 12;
-var myinp3 = " ";
-var myinp4 = 11;
-var myinp5 = 3;
-var myinp6 = "Its a string";
-var myinp7 = "Its a string";
-var myinp8 = "ItS A STRING";
-var myinp9 = 15;
-var myinp10 = 64;
-let arr1 = [1, 2, 3, 4, 5];
-let arr2 = [35, 102, 98, 47, 65, 12];
-let arr3 = [35, 102, 98, 47, 65, 12];
-let arr4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let arr5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-inputstr = "Apple";
-
-
-
-
-
-dispinp(myinp1);
-console.log(isnum(myinp2));
-console.log(ifstr(myinp3));
-console.log(iseven(myinp4));
-console.log(isodd(myinp5));
-console.log(checklength(myinp6));
-console.log(upper(myinp7));
-console.log(lower(myinp8));
-console.log(squareOfNum(myinp9));
-console.log(squareRootOfNum(myinp10));
-console.log(arrlen(arr1));
-console.log(maxnum(arr2));
-console.log(minnum(arr3));
-console.log(sumarr(arr4));
-console.log(avgOfarr(arr5));
+dispinp(inputstr);
+console.log(isnum(1));
+console.log(isnum("1"));
+console.log(ifstr("Manasi"));
+console.log(ifstr());
+console.log(iseven(12));
+console.log(iseven(15));
+console.log(isodd(12));
+console.log(isodd(15));
+console.log(checklength(inputstr));
+console.log(upper(inputstr));
+console.log(lower(inputstr));
+console.log(squareOfNum(15));
+console.log(squareRootOfNum(64));
+console.log(arrlen(arr));
+console.log(maxnum(arr));
+console.log(minnum(arr));
+console.log(sumarr(arr));
+console.log(avgOfarr(arr));
 freqOfChar(inputstr);
 
