@@ -56,3 +56,51 @@ console.log(minnum(arr));
 console.log(maxnum(arr));
 console.log(sumofarr(arr));
 console.log(avgofarr(arr));
+console.log(sumofnum(arr));
+console.log(even(arr));
+console.log(sqare(arr));
+console.log(greater1([11,2,4,55]));
+
+function sumofnum(arr) {
+  
+    sum = 0;
+    arr.map(element=>{
+        sum = sum + element;
+    })
+    return sum;   
+  
+}
+
+function sqare(arr) {
+
+    let a = arr.map(element=>{
+      return element*element;
+    })  
+    return a;
+  }
+
+console.log(greater1([11,2,4,55]));
+
+function greater1(arra){
+
+    let B = arra.filter(element=>{
+        if(element>10) {
+            return true
+        }
+    });
+
+    return B;
+}
+
+function even(arr) {
+  let a = arr.filter(element=>{
+    if(element%2 === 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+  })  
+  return a;
+}
+
