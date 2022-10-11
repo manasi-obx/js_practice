@@ -14,7 +14,7 @@ function isnum (inp) {
 }
 
 
-function ifstr(inp) {
+function isstr(inp) {
     if (typeof(inp) === typeof("ABC")) {
       return 1;
     }
@@ -145,29 +145,9 @@ function freqOfChar(inputstr) {
     }
 }
 
+module.exports = {
+    dispinp, isnum, isstr, iseven, isodd, checklength, upper, lower, squareOfNum,
+    squareRootOfNum, arrlen, maxnum, minnum, sumarr, avgOfarr, freqOfChar,
+};
 
-let arr = [35, 102, 98, 47, 65, 12];
-inputstr = "Its a string";
-
-
-dispinp(inputstr);
-console.log(isnum(1));
-console.log(isnum("1"));
-console.log(ifstr("Manasi"));
-console.log(ifstr());
-console.log(iseven(12));
-console.log(iseven(15));
-console.log(isodd(12));
-console.log(isodd(15));
-console.log(checklength(inputstr));
-console.log(upper(inputstr));
-console.log(lower(inputstr));
-console.log(squareOfNum(15));
-console.log(squareRootOfNum(64));
-console.log(arrlen(arr));
-console.log(maxnum(arr));
-console.log(minnum(arr));
-console.log(sumarr(arr));
-console.log(avgOfarr(arr));
-freqOfChar(inputstr);
 

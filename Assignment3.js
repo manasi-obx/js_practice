@@ -138,7 +138,10 @@ function areaofsqare(w){
 }
 
 //----------------15---------------
-
+let today = new Date();
+let DOB = new Date(2000, 1, 12);
+let age = today - DOB;
+console.log(age);
 
 //------------------------------------
 
