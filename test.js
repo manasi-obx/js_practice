@@ -1,5 +1,5 @@
-const letimp1 = require('./Assignment1.js');
-const letimp2 = require('./Assignment3.js');
+const letimp1 = require('./Packagefortest/Assignment1.js');
+const letimp2 = require('./Packagefortest/Assignment3.js');
 
 
 var numbers = [36, 10, 45, 9, 2, 30, 44, 97, 7, 71];
