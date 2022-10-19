@@ -17,8 +17,22 @@ async function studentOfDivision (std,div) {
 }
 
 async function studentOF20Plus (std) {
-    const students = await csv(). fromFile ('Student.csv')
-    console.log(students.filter(student => student.Standard == std && student.Age >= 13));
+    const students = await csv(). fromFile ('Student.csv');
+    let group = (students.filter(student => student.Standard == std));
+    let groupDOB = group.map(student => student.DOB);
+    let yy = groupDOB.map(dob => dob.slice(6));
+    let today = new Date ();
+    let thisYear = today.getFullYear();
+    yy.map(year => {
+        if(year.length === 2){
+            year = parseInt(year) + 2000;
+            let age = thisYear - year;
+            console.log(age);
+        } else {
+            let age = thisYear - parseInt(year);
+            console.log(age);
+        }
+    })
 }
 
 async function marksOf1Div (std, sub) {
@@ -52,6 +66,6 @@ async function topperOfClass (std) {
 //students();
 //studentsOfClass(8);
 //studentOfDivision(8,"B");
-//studentOF20Plus(8);
+studentOF20Plus(10);
 //marksOf1Div(9,"Maths");s
 //topperOfClass(10);
