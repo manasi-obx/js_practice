@@ -49,7 +49,6 @@ async function topperOfClass (std) {
     console.log("Topper",topper);
 }
 
-
 //students();
 //studentsOfClass(8);
 //studentOfDivision(8,"B");
