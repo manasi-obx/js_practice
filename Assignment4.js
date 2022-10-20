@@ -21,15 +21,22 @@ async function studentOF20Plus (std) {
     let group = (students.filter(student => student.Standard == std));
     let groupDOB = group.map(student => student.DOB);
     let yy = groupDOB.map(dob => dob.slice(6));
+    console.log(yy);
     let today = new Date ();
     let thisYear = today.getFullYear();
     yy.map(year => {
-        if(year.length === 2){
+        if(year.length === 2 && (year >= 00 && year <= 22)){
             year = parseInt(year) + 2000;
             let age = thisYear - year;
             console.log(age);
-        } else {
+        } 
+        else if (year.length === 4){
             let age = thisYear - parseInt(year);
+            console.log(age);
+        }
+        else {
+            year = parseInt(year) + 1900;
+            let age = thisYear - year;
             console.log(age);
         }
     })
